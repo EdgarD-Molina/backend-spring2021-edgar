@@ -12,6 +12,13 @@
 // }
 // console.log(result);
 
-for (let number = 0; number <=12; number = number +2) {
-    console.log(number);
+// for (let number = 0; number <=12; number = number +2) {
+//     console.log(number);
+// }
+
+for (let current = 89; ; current = current + 1) {
+    if (current % 5 == 0) {
+        console.log(current);
+        break;
+    }
 }
