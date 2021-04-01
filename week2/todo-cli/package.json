@@ -1,0 +1,11 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "Simple script for a to-do list using command lines.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edgar D. Molina",
+  "license": "ISC"
+}
