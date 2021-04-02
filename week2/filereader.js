@@ -16,7 +16,7 @@ if (action === undefined) {
     Read an existing file     node filereader.js read myfile.txt
     Write a new file:         node filereader.js write newFile.txt "New text to write"
     Update an existing file:  node filereader.js update myFile.txt "Text you want to add"
-    Merge any current files:  node filereader.js merge file1.txt file2.txt mergedfilename.txt  
+    Merge any current files:  node filereader.js merge file1.txt file2.txt mergedfilename.txt
     Delete an existing file:  node filereader.js delete myFile.txt true `)
     return;
 }
@@ -86,7 +86,27 @@ if (action === "read") {
     }
 
 } else if (action === "copy") {
+    
+      if (fs.existsSync(fileName)) {
+          let fileContents = fs.copyFileSync(fileName, "newcopyfile.txt");
+          let copiedFile = fileContents;
+            // if (fs.writeSync(copiedFile, "utf-8"));
+            console.log("Copy succesful.");
+      }
+
+        else {console.log("Sorry, that file does not exist. Cannot copy");}
+        // fs.readFileSync(fileName, "utf-8"); {
+
+        //     fs.copyFileSync(fileName, "copycopycopy.txt");
+        //     console.log("File copied succesfully.") }
 
 } else {
     console.log("There is no action by that name. You can read, write, update, delete, merge, or copy.");
-}
+    }
+
+    //     console.log("You can copy files using the 'copy' feature. Using the argument of 'copy' .")
+    // if (fs.existsSync(fileName)) {
+    //     copyFileSync(fileName + fileContents,);
+    //     console.log('source.txt was copied to destination.txt');
+    //     }
+    
