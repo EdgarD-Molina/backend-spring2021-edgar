@@ -1,0 +1,14 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "An app for web service todo list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edgar D. Molina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

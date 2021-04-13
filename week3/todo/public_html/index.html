@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"> </script>
+ 
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <script src="scripts/all.min.js"> </script>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+        <div id="container"> 
+            <h1>Welcome to the To-Do App! </h1>
+
+            <section id ="new-task" >
+                <div>
+                    <h2> Add Task </h2>
+                    <br>
+                    <label for ="task-text">Task </label>
+                    <input type="text" id="task-text"/>
+                    <br>
+                    <label for="priority1" > Priority1  </label>
+                    <input type="radio" name="priority1" id="priority1" />
+                    <label for="priority2" > Priority 2 </label>
+                    <input type="radio" name="priority2" id="priorty2" />
+                    <label for="priority3" > Priority 3 </label>
+                    <input type="radio" name="priority3" id="priority3"/>
+                    <br>
+                    <label for="due-date"> Due Date </label>
+                    <input type="date" id="due date" />
+                    <button> Save </button> 
+                </div>
+            </section>
+
+            <section id="task-list">
+                <h2> Task List</h2>
+                <button> Incomplete Tasks</button>
+                <button> Complete Tasks </button>
+
+                <div class="task">
+                    <button> <i class="fas fa-check"></i> </button>
+                    <p> Task text here </p>
+                    <button> <i class="fas fa-minus-circle"></i> </button>
+                    <button><i class="far fa-edit"></i></button>
+                    <div class="edit-panel">
+                        <label for="task-text" > Task </label>
+                        <input type="text" id="task-text" />
+                        <br />
+                        <label for="priority-1">Priority 1</label>
+                        <input type="radio" name="priority" id="priority-1" />
+                        <label for="priority-2">Priority 2</label>
+                        <input type="radio" name="priority" id="priority-2" />
+                        <label for="priority-3">Priority 3</label>
+                        <input type="radio" name="priority" id="priority-3" />
+                        <br />
+                        <label for="due-date">Due Date</label>
+                        <input type="date" id="due-date" />
+                        <button>Save Changes</button>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        
+        <script src="scripts/main.js"> </script>
+
+</body>
+</html>

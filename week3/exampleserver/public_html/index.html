@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good News Everyone!</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="#">
+
+</head>
+
+<body>
+    <h1>Welcome to the world of tomorrow!</h1>
+    <br>
+    <p>So<a href="/secretwebsite">,</a> what is your vice?</p>
+
+    <form>
+        <label for="number">Type numbers between 1-10.</label>
+        <input type="number" id="number" />
+        <button>Ship it, my dude.</button>
+    </form>
+
+    <p id="results"></p>
+
+    <script>
+        const baseUrl = "http://localhost:3000";
+
+        $(function () {
+
+            $("button").click(function (event) {
+                event.preventDefault();
+
+                let number = $("#number").val();
+
+                number = parseInt(number);
+
+                if (Number.isNaN(number)) {
+                    $("#results").text("Sorry, but that's not a number. Try again.");
+
+                    return;
+                }
+
+                let objectToSend = {
+                    message: "hello", 
+                    numberGuess: number,
+                    someObject: {
+                        someValue: 10
+                    },
+                    thisShouldBeTrue: true
+                };
+                console.log(objectToSend);
+
+                // jQuery POST Request
+                $.post(baseUrl + "/submitNumber", objectToSend, function (response) {
+                    console.log(response);
+
+                    //Grab the data from the response object sent by the back end and place it in the paragraph element in the HTML.
+
+                    $("#results").text(response.message);
+               });
+            });
+
+        });
+
+    </script>
+</body>
+</html>

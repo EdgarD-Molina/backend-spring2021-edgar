@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@700&display=swap');
+
+/*Default Value Start */
+
+body {
+    background-color: #FFE693;
+    font-family: 'Voces', cursive;
+    font-size: 24px;
+    color: white;
+}
+
+h1 {
+    font-family: 'Glegoo', serif;
+    font-size: 32px;
+    padding: 15px;
+    text-align: center;
+}
+
+/*Default Value Ends */
+
+div#container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+/* Shares parts with task list section */
+section#new-task, section#task-list {
+    background-color: #567bb3;
+    color: rgb(255, 255, 255);
+    margin-bottom: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+section#new-task div {
+    margin: 10px;
+}
+
+section#new-task h2, section#task-list h2 {
+    padding: 10px;
+    background-color: rgb(51, 100, 235);
+    font-weight: bold;
+}
+
+section#new-task label {
+    padding: 12px;
+    display: inline-block;
+}
+
+section#new-task input, div.edit-panel input {
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 15px;
+    font-size:20px;
+    padding-left:12px;
+    color: cornflowerblue;
+    font-family: 'Voces', cursive;
+}
+
+section#new-task input [type="radio"], div.edit-panel input[type="radio"] {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+section#new-task div input:nth-child(2), div.edit-panel input:nth-child(2) {
+    width: 85%;
+    float: right;
+}
+
+section#new-task button {
+    width: 200px;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    vertical-align: top;
+    float: right;
+    font-size: 1em;
+    color: cornflowerblue;
+    font-weight: bold;
+    font-family: 'Voces', cursive;
+}
+
+section#task-list {
+    background-color: rgb(240, 196, 232);
+    padding-bottom: 12px;
+}
+
+button#incomplete-list, button#complete-list {
+    width: 150px;
+    height: 24px;
+    border-radius: 12px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border: none;
+    margin-bottom: 12px;
+    vertical-align: top;
+    font-size: .5em;
+    color: #2c3e50;
+    font-weight: bold;
+    font-family: 'Voces', cursive;
+}
+
+section#task-list h2 {
+    background-color: rgb(163, 103, 163);
+}
+
+div.task {
+    background-color: rgb(189, 165, 247);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+div.task p {
+    display: inline-block;
+    margin: 12px;
+}
+
+div.task > button {
+    width: 48px;
+    height: 48px;
+    vertical-align: top;
+    border-radius: 50%;
+    border: none;
+    background-color: inherit;
+    font-size: 1em;
+    color: #c0eaf5;
+}
+
+div.task > button:nth-child(4), div.task > button:nth-child(3) {
+    float: right;
+}
+
+div.task > button:hover {
+    background-color:#f0ee84;
+}
+
+div.edit-panel {
+    background-color:#f33939;
+    padding: 12px;
+}

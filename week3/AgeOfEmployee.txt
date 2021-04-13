@@ -1,0 +1,12 @@
+1 Grab all the ages of employees
+	a. make array holding employee data
+	b. figureo ut how to get the age value from each employee data
+		i.check if age value exists
+		ii. if it exists, go to step c.
+		iii. if it doesnt exist, skip current employee
+	c. go through each employee data and get age value
+	d. save the age value somewhere else.
+2.add all ages together.
+	e.add all the saved age values.
+3. divide the total age by the amount of employees.
+	f. divide all the age values by the amount of age values.
