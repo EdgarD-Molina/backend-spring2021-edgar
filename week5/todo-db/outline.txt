@@ -1,0 +1,24 @@
+To do app
+Keeps track of tasks
+	add tasks (new task id)
+	----Ability to add a task.
+Have a section that offers the ability to add a task.
+There will be input for task, radio button for urgency, input for due date, submit button, priority 
+
+--deleting tasks
+	put large x next ot each task entry in the list tasks, when clicked on , remove the task from view and delete.
+---pop-up box to ensure user wants to delete said task.
+
+-----edit task
+--Create a drawer of current task, and shows info within the input boxes. Has a save button for any changes.
+
+--completing tasks
+Put large checkbox next to task entry in list tasks, when clicked on, remove from incomplete, then move to completed list.
+
+----------list current tasks/completed tasks
+One view for incomplete tasks and another for completed tasks.
+Display all task showing task text, urgency, due date, how many days since task created.
+
+Feature
+	-Order by urgency
+	---login for user
