@@ -1,0 +1,8 @@
+Police Department Incdent Reports: 2018 to present.
+
+Q 1 : What is the most common type of incident
+Q 2 : What day of the week is (on average) the most active.
+Q 3 : Which neighborhood is the most active and least active
+Q 4 : Percantage of issues resolved, per year, per month?
+Q 5 : What supervisor district has the most and least activity?
+Bonus Q : What percantage of crime type per district?
