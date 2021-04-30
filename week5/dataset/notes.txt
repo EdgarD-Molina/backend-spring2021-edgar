@@ -5,4 +5,6 @@ Q 2 : What day of the week is (on average) the most active.
 Q 3 : Which neighborhood is the most active and least active
 Q 4 : Percantage of issues resolved, per year, per month?
 Q 5 : What supervisor district has the most and least activity?
+Q 1A : What street has the most activity?
+
 Bonus Q : What percantage of crime type per district?
